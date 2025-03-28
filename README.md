@@ -1,24 +1,44 @@
-Repositório de Exercícios e Projetos
+# 📌 Exercícios e Projetos de Programação
 
-Este repositório foi criado para armazenar e organizar exercícios e projetos desenvolvidos com o objetivo de aprimorar minhas habilidades em programação. A prática contínua é essencial para o aprendizado, e aqui registro meu progresso em diferentes linguagens e conceitos.
+Este repositório foi criado para armazenar exercícios e projetos desenvolvidos com o objetivo de aprimorar minhas habilidades em programação por meio da prática contínua.  
 
-Fontes de Prática
+## 🚀 Objetivo
 
-Para desenvolver minhas habilidades, utilizo diferentes plataformas e desafios. Um dos sites que utilizo frequentemente para praticar é o Exercism, que oferece uma variedade de exercícios e mentorias em diversas linguagens de programação.
+- Melhorar a lógica de programação e a resolução de problemas.  
+- Praticar diferentes linguagens e paradigmas de programação.  
+- Registrar minha evolução ao longo do tempo.  
 
-Estrutura do Repositório
+## 🛠️ Ferramentas e Plataformas  
 
-O repositório está organizado da seguinte forma:
+Um dos sites utilizados para praticar é o [Exercism](https://exercism.org/), que oferece desafios interativos e suporte a diversas linguagens. Além disso, outras plataformas e fontes de aprendizado podem ser utilizadas ao longo do tempo.  
 
-/linguagem: Contém exercícios e projetos organizados por linguagem de programação.
+## 📂 Estrutura do Repositório  
 
-/desafios: Desafios específicos resolvidos para fortalecer o pensamento lógico e a resolução de problemas.
+O repositório está organizado da seguinte forma:  
 
-/projetos: Pequenos projetos desenvolvidos para aplicar conceitos e aprender na prática.
+```
+📦 exercicios
+ ┣ 📂 linguagem-1
+ ┃ ┣ 📜 exercicio1.ext
+ ┃ ┣ 📜 exercicio2.ext
+ ┃ ┗ ...
+ ┣ 📂 linguagem-2
+ ┃ ┣ 📜 projeto1.ext
+ ┃ ┣ 📜 projeto2.ext
+ ┃ ┗ ...
+ ┗ 📜 README.md
+```
 
-Como Contribuir
+Cada pasta representa uma linguagem de programação ou tecnologia específica, e dentro dela estão os arquivos correspondentes aos exercícios e projetos.
 
-Este repositório é pessoal, mas qualquer sugestão é bem-vinda! Caso queira compartilhar ideias ou indicar novos desafios, fique à vontade para abrir uma issue ou enviar uma mensagem.
+## 📌 Como Utilizar  
 
-Mantenho este espaço atualizado com novos desafios e projetos à medida que avanço nos estudos. Sinta-se à vontade para explorar e acompanhar meu progresso!
+1. Clone o repositório:  
+   ```sh
+   git clone https://github.com/seu-usuario/exercicios.git
+   ```
+2. Navegue até a pasta desejada e explore os exercícios e projetos disponíveis.  
 
+---
+
+📌 *Este repositório será atualizado constantemente à medida que novos desafios forem resolvidos!* 🚀
