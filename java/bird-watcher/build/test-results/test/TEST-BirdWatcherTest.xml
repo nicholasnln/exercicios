@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BirdWatcherTest" tests="9" skipped="0" failures="7" errors="0" timestamp="2025-03-31T16:59:20" hostname="DESKTOP-9EHEOSJ" time="0.106">
+<testsuite name="BirdWatcherTest" tests="9" skipped="0" failures="5" errors="0" timestamp="2025-04-01T17:51:39" hostname="DESKTOP-9EHEOSJ" time="0.131">
   <properties/>
-  <testcase name="The getBusyDays method correctly returns zero in case of no busy days" classname="BirdWatcherTest" time="0.02">
+  <testcase name="The getBusyDays method correctly returns zero in case of no busy days" classname="BirdWatcherTest" time="0.024">
     <failure message="java.lang.UnsupportedOperationException: Please implement the BirdWatcher.getBusyDays() method" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: Please implement the BirdWatcher.getBusyDays() method
-	at BirdWatcher.getBusyDays(BirdWatcher.java:38)
+	at BirdWatcher.getBusyDays(BirdWatcher.java:40)
 	at BirdWatcherTest.itShouldNotHaveBusyDays(BirdWatcherTest.java:93)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 </failure>
   </testcase>
-  <testcase name="The hasDayWithoutBirds method returns false when no day had zero visits" classname="BirdWatcherTest" time="0.002">
-    <failure message="java.lang.UnsupportedOperationException: Please implement the BirdWatcher.hasDayWithoutBirds() method" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: Please implement the BirdWatcher.hasDayWithoutBirds() method
-	at BirdWatcher.hasDayWithoutBirds(BirdWatcher.java:30)
-	at BirdWatcherTest.itShouldNotHaveDaysWithoutBirds(BirdWatcherTest.java:61)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  <testcase name="The hasDayWithoutBirds method returns false when no day had zero visits" classname="BirdWatcherTest" time="0.05"/>
+  <testcase name="The getLastWeek method correctly returns last week's counts" classname="BirdWatcherTest" time="0.006"/>
+  <testcase name="The hasDayWithoutBirds method returns true when day had no visits" classname="BirdWatcherTest" time="0.014">
+    <failure message="org.opentest4j.AssertionFailedError: &#13;&#10;Expecting value to be true but was false" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+Expecting value to be true but was false
+	at java.base@17.0.14/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.14/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.14/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.14/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at app//BirdWatcherTest.itHasDayWithoutBirds(BirdWatcherTest.java:53)
+	at java.base@17.0.14/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base@17.0.14/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.14/java.util.ArrayList.forEach(ArrayList.java:1511)
 </failure>
   </testcase>
-  <testcase name="The getLastWeek method correctly returns last week's counts" classname="BirdWatcherTest" time="0.055"/>
-  <testcase name="The hasDayWithoutBirds method returns true when day had no visits" classname="BirdWatcherTest" time="0.002">
-    <failure message="java.lang.UnsupportedOperationException: Please implement the BirdWatcher.hasDayWithoutBirds() method" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: Please implement the BirdWatcher.hasDayWithoutBirds() method
-	at BirdWatcher.hasDayWithoutBirds(BirdWatcher.java:30)
-	at BirdWatcherTest.itHasDayWithoutBirds(BirdWatcherTest.java:53)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-</failure>
-  </testcase>
-  <testcase name="The getBusyDays method returns the correct count of busy days" classname="BirdWatcherTest" time="0.002">
+  <testcase name="The getBusyDays method returns the correct count of busy days" classname="BirdWatcherTest" time="0.001">
     <failure message="java.lang.UnsupportedOperationException: Please implement the BirdWatcher.getBusyDays() method" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: Please implement the BirdWatcher.getBusyDays() method
-	at BirdWatcher.getBusyDays(BirdWatcher.java:38)
+	at BirdWatcher.getBusyDays(BirdWatcher.java:40)
 	at BirdWatcherTest.itTestGetCountForBusyDays(BirdWatcherTest.java:85)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -40,26 +36,18 @@
   </testcase>
   <testcase name="The getCountForFirstDays method returns correct visits' count for given number of days" classname="BirdWatcherTest" time="0.002">
     <failure message="java.lang.UnsupportedOperationException: Please implement the BirdWatcher.getCountForFirstDays() method" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: Please implement the BirdWatcher.getCountForFirstDays() method
-	at BirdWatcher.getCountForFirstDays(BirdWatcher.java:34)
+	at BirdWatcher.getCountForFirstDays(BirdWatcher.java:36)
 	at BirdWatcherTest.itTestGetCountForFirstDays(BirdWatcherTest.java:69)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 </failure>
   </testcase>
-  <testcase name="The getToday method correctly returns today's counts" classname="BirdWatcherTest" time="0.009"/>
-  <testcase name="The incrementTodaysCount method correctly increments today's counts" classname="BirdWatcherTest" time="0.003">
-    <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7" type="java.lang.ArrayIndexOutOfBoundsException">java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
-	at BirdWatcher.incrementTodaysCount(BirdWatcher.java:25)
-	at BirdWatcherTest.itIncrementTodaysCount(BirdWatcherTest.java:45)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-</failure>
-  </testcase>
-  <testcase name="The getCountForFirstDays method returns overall count when number of days is higher than array size" classname="BirdWatcherTest" time="0.001">
+  <testcase name="The getToday method correctly returns today's counts" classname="BirdWatcherTest" time="0.017"/>
+  <testcase name="The incrementTodaysCount method correctly increments today's counts" classname="BirdWatcherTest" time="0.001"/>
+  <testcase name="The getCountForFirstDays method returns overall count when number of days is higher than array size" classname="BirdWatcherTest" time="0.004">
     <failure message="java.lang.UnsupportedOperationException: Please implement the BirdWatcher.getCountForFirstDays() method" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: Please implement the BirdWatcher.getCountForFirstDays() method
-	at BirdWatcher.getCountForFirstDays(BirdWatcher.java:34)
+	at BirdWatcher.getCountForFirstDays(BirdWatcher.java:36)
 	at BirdWatcherTest.itTestGetCountForMoreDaysThanTheArraySize(BirdWatcherTest.java:76)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)

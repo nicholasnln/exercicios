@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">7</div>
+<div class="counter">5</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.096s</div>
+<div class="counter">0.119s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">22%</div>
+<div class="percent">44%</div>
 <p>successful</p>
 </div>
 </td>
@@ -73,25 +73,16 @@
 <a name="itHasDayWithoutBirds()"></a>
 <h3 class="failures">The hasDayWithoutBirds method returns true when day had no visits</h3>
 <span class="code">
-<pre>java.lang.UnsupportedOperationException: Please implement the BirdWatcher.hasDayWithoutBirds() method
-	at BirdWatcher.hasDayWithoutBirds(BirdWatcher.java:30)
-	at BirdWatcherTest.itHasDayWithoutBirds(BirdWatcherTest.java:53)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="itIncrementTodaysCount()"></a>
-<h3 class="failures">The incrementTodaysCount method correctly increments today's counts</h3>
-<span class="code">
-<pre>java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
-	at BirdWatcher.incrementTodaysCount(BirdWatcher.java:25)
-	at BirdWatcherTest.itIncrementTodaysCount(BirdWatcherTest.java:45)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+<pre>org.opentest4j.AssertionFailedError: 
+Expecting value to be true but was false
+	at java.base@17.0.14/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.14/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.14/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.14/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at app//BirdWatcherTest.itHasDayWithoutBirds(BirdWatcherTest.java:53)
+	at java.base@17.0.14/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base@17.0.14/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.14/java.util.ArrayList.forEach(ArrayList.java:1511)
 </pre>
 </span>
 </div>
@@ -100,21 +91,8 @@
 <h3 class="failures">The getBusyDays method correctly returns zero in case of no busy days</h3>
 <span class="code">
 <pre>java.lang.UnsupportedOperationException: Please implement the BirdWatcher.getBusyDays() method
-	at BirdWatcher.getBusyDays(BirdWatcher.java:38)
+	at BirdWatcher.getBusyDays(BirdWatcher.java:40)
 	at BirdWatcherTest.itShouldNotHaveBusyDays(BirdWatcherTest.java:93)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="itShouldNotHaveDaysWithoutBirds()"></a>
-<h3 class="failures">The hasDayWithoutBirds method returns false when no day had zero visits</h3>
-<span class="code">
-<pre>java.lang.UnsupportedOperationException: Please implement the BirdWatcher.hasDayWithoutBirds() method
-	at BirdWatcher.hasDayWithoutBirds(BirdWatcher.java:30)
-	at BirdWatcherTest.itShouldNotHaveDaysWithoutBirds(BirdWatcherTest.java:61)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -126,7 +104,7 @@
 <h3 class="failures">The getBusyDays method returns the correct count of busy days</h3>
 <span class="code">
 <pre>java.lang.UnsupportedOperationException: Please implement the BirdWatcher.getBusyDays() method
-	at BirdWatcher.getBusyDays(BirdWatcher.java:38)
+	at BirdWatcher.getBusyDays(BirdWatcher.java:40)
 	at BirdWatcherTest.itTestGetCountForBusyDays(BirdWatcherTest.java:85)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -139,7 +117,7 @@
 <h3 class="failures">The getCountForFirstDays method returns correct visits' count for given number of days</h3>
 <span class="code">
 <pre>java.lang.UnsupportedOperationException: Please implement the BirdWatcher.getCountForFirstDays() method
-	at BirdWatcher.getCountForFirstDays(BirdWatcher.java:34)
+	at BirdWatcher.getCountForFirstDays(BirdWatcher.java:36)
 	at BirdWatcherTest.itTestGetCountForFirstDays(BirdWatcherTest.java:69)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -152,7 +130,7 @@
 <h3 class="failures">The getCountForFirstDays method returns overall count when number of days is higher than array size</h3>
 <span class="code">
 <pre>java.lang.UnsupportedOperationException: Please implement the BirdWatcher.getCountForFirstDays() method
-	at BirdWatcher.getCountForFirstDays(BirdWatcher.java:34)
+	at BirdWatcher.getCountForFirstDays(BirdWatcher.java:36)
 	at BirdWatcherTest.itTestGetCountForMoreDaysThanTheArraySize(BirdWatcherTest.java:76)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -175,31 +153,31 @@
 <tr>
 <td class="failures">The hasDayWithoutBirds method returns true when day had no visits</td>
 <td class="failures">itHasDayWithoutBirds()</td>
-<td class="failures">0.002s</td>
+<td class="failures">0.014s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
-<td class="failures">The incrementTodaysCount method correctly increments today's counts</td>
-<td class="failures">itIncrementTodaysCount()</td>
-<td class="failures">0.003s</td>
-<td class="failures">failed</td>
+<td class="success">The incrementTodaysCount method correctly increments today's counts</td>
+<td class="success">itIncrementTodaysCount()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">The getBusyDays method correctly returns zero in case of no busy days</td>
 <td class="failures">itShouldNotHaveBusyDays()</td>
-<td class="failures">0.020s</td>
+<td class="failures">0.024s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
-<td class="failures">The hasDayWithoutBirds method returns false when no day had zero visits</td>
-<td class="failures">itShouldNotHaveDaysWithoutBirds()</td>
-<td class="failures">0.002s</td>
-<td class="failures">failed</td>
+<td class="success">The hasDayWithoutBirds method returns false when no day had zero visits</td>
+<td class="success">itShouldNotHaveDaysWithoutBirds()</td>
+<td class="success">0.050s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">The getBusyDays method returns the correct count of busy days</td>
 <td class="failures">itTestGetCountForBusyDays()</td>
-<td class="failures">0.002s</td>
+<td class="failures">0.001s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
@@ -211,19 +189,19 @@
 <tr>
 <td class="failures">The getCountForFirstDays method returns overall count when number of days is higher than array size</td>
 <td class="failures">itTestGetCountForMoreDaysThanTheArraySize()</td>
-<td class="failures">0.001s</td>
+<td class="failures">0.004s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">The getLastWeek method correctly returns last week's counts</td>
 <td class="success">itTestGetLastWeek()</td>
-<td class="success">0.055s</td>
+<td class="success">0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">The getToday method correctly returns today's counts</td>
 <td class="success">itTestGetToday()</td>
-<td class="success">0.009s</td>
+<td class="success">0.017s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -236,7 +214,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.7</a> at 31 de mar. de 2025 13:59:20</p>
+<a href="http://www.gradle.org">Gradle 8.7</a> at 1 de abr. de 2025 14:51:40</p>
 </div>
 </div>
 </body>

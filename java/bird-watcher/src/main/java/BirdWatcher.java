@@ -12,22 +12,24 @@ class BirdWatcher {
     }
 
     public int getToday() {
-        int[] birdsPerDay = {2, 5, 0, 7, 4};
-        int getToday = 0;
-        for (int i = 0; i < birdsPerDay.length; i++) {
-            getToday = birdsPerDay[i];
+        if (birdsPerDay.length == 0) {
+            return 0; // Retorna 0 caso o array esteja vazio
         }
-        return getToday;
+        return birdsPerDay[birdsPerDay.length - 1];
     }
 
     public void incrementTodaysCount() {
+
         if (birdsPerDay.length > 0){
-            birdsPerDay[birdsPerDay.length]++;
+            birdsPerDay[birdsPerDay.length - 1]++;
         }
     }
 
     public boolean hasDayWithoutBirds() {
-        throw new UnsupportedOperationException("Please implement the BirdWatcher.hasDayWithoutBirds() method");
+        if (birdsPerDay.length == 0) {
+            return true;
+        }else
+            return false;
     }
 
     public int getCountForFirstDays(int numberOfDays) {
